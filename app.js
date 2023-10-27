@@ -1,16 +1,16 @@
 // CHAPTER 38 TO 42
 
 // ANSWER NO: 01
-function power(a, b) {
-  let result = 1;
-  for (let i = 1; i <= b; i++) {
-    result = result * a;
-  }
-  return result;
-}
-let a = +prompt("Enter a number..");
-let b = +prompt("Enter a power..");
-alert(power(a, b));
+// function power(a, b) {
+//   let result = 1;
+//   for (let i = 1; i <= b; i++) {
+//     result = result * a;
+//   }
+//   return result;
+// }
+// let a = +prompt("Enter a number..");
+// let b = +prompt("Enter a power..");
+// alert(power(a, b));
 
 // ANSWER NO: 02
 // function leapYear(year) {
@@ -39,3 +39,43 @@ alert(power(a, b));
 // }
 // let year = prompt("Enter any Year..");
 // leapYear(year);
+
+// ANSWER NO: 03
+// function semi(a, b, c) {
+//   return (a + b + c) / 2;
+// }
+// function areaOfTriangle(a, b, c) {
+//   let s = semi(a, b, c);
+//   let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+//   return area;
+// }
+// let a = +prompt("Enter length A");
+// let b = +prompt("Enter length B");
+// let c = +prompt("Enter length C");
+// let area = areaOfTriangle(a, b, c);
+
+// alert("Area of triangle" + area);
+
+// ANSWER NO: 04
+function average(math, phy, compSci){
+     let result = (math + phy + compSci)/3;
+     return result;
+}
+function percentage(obtain, total){
+    let result = (obtain/total) * 100;
+    return result;
+}
+function mainFunction(math, phy, compSci){
+    let ave = average(math, phy, compSci);
+    let obtain = math + phy + compSci;
+    let total = 300;
+    let per = percentage(obtain, total);
+    document.write("Average: " + ave);
+    document.write("<br>Percentage: " + per + "%");
+    
+}
+let math = prompt("Enter marks of Mathematics");
+let phy = prompt("Enter marks of Physics");
+let compSci = prompt("Enter marks of Computer");
+mainFunction(math, phy, compSci);
+
